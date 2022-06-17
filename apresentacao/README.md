@@ -1,6 +1,30 @@
 # Apresentacao
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.19.
+Este projeto foi desenvolvido com [Angular CLI](https://github.com/angular/angular-cli) versão 11.2.19.
+
+Utilizando os componentes do Material Design, o projeto desenvolvido inicialmente tem como objetivo exibir em uma lista os pokemons cadastrados assim como também a criação de novos.
+
+O Projeto está dividido em Apresentacao (Front-End) e json-server (Api JSONServer)
+
+Passos para execução do projeto:
+
+-- API --
+
+1° Ir na pasta do json-server
+
+2° Caso não tenha instalado o json-server na máquina, aplicar o comando: 
+
+`npm install -g json-server`
+
+3° Para executar o serviço, aplicar o comando:
+
+`json-server --watch db.json`    
+
+-- Front-end --
+
+1° Acessar o diretório apresentacao
+
+2° Aplicar o comando: `ng serve --open`
 
 ## Development server
 
