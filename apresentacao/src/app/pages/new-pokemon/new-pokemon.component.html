@@ -1,1 +1,53 @@
-<p>new-pokemon works!</p>
+<app-page-header></app-page-header>
+
+<section>
+    <mat-card class="cadastro-pokemon">
+        <a mat-raised-button href="/">
+            <mat-icon>view_list</mat-icon>
+            <span>Pokemons</span>
+        </a>
+        <section>  
+            <form [formGroup]="cadastroForm" class="cadastro-pokemon__formulario" (ngSubmit)="enviaForm()">
+                <p>
+                    <mat-form-field appearance="legacy">
+                      <mat-label>Nome</mat-label>
+                      <input matInput formControlName="nome" placeholder="Digite o nome">
+                    </mat-form-field>
+                    <mat-form-field appearance="legacy">
+                        <mat-label>Altura</mat-label>
+                        <input type="number" matInput formControlName="altura" placeholder="Digite a Altura">
+                    </mat-form-field>
+                    <mat-form-field appearance="legacy">
+                        <mat-label>Peso</mat-label>
+                        <input type="number" matInput formControlName="peso" placeholder="Digite o Peso">
+                    </mat-form-field>
+                </p>
+                <p>
+                    <mat-form-field appearance="legacy">
+                        <mat-label>Categoria</mat-label>
+                        <mat-select formControlName="categoria">
+                          <mat-option *ngFor="let categoria of listaCategorias" [value]="categoria.id">{{ categoria.nome }}</mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                    <mat-form-field appearance="legacy">
+                        <mat-label>Habilidades</mat-label>
+                        <mat-select multiple formControlName="habilidades"> 
+                          <mat-option *ngFor="let hab of listaHabilidades" [value]="hab.id">{{ hab.nome }}</mat-option>
+                        </mat-select>
+                      </mat-form-field>
+                </p>
+                <p>
+                    <mat-form-field appearance="legacy">
+                        <mat-label>Descrição</mat-label>
+                        <textarea matInput formControlName="descricao"></textarea>
+                    </mat-form-field>
+                </p>
+                <p>
+                    <button id="basic" type="submit" mat-raised-button color="primary">
+                        Cadastrar
+                    </button>
+                </p>
+            </form>
+        </section>
+    </mat-card>
+</section>

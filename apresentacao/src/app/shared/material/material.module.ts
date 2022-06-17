@@ -8,6 +8,7 @@ import { MatCardModule } from '@angular/material/card';
 import { MatInputModule } from '@angular/material/input';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatChipsModule } from '@angular/material/chips';
+import { MatSelectModule } from '@angular/material/select';
 
 @NgModule({
   declarations: [],
@@ -18,7 +19,8 @@ import { MatChipsModule } from '@angular/material/chips';
     MatCardModule,
     MatInputModule,
     MatGridListModule,
-    MatChipsModule
+    MatChipsModule,
+    MatSelectModule
   ],
   imports: [
     CommonModule,
@@ -28,7 +30,8 @@ import { MatChipsModule } from '@angular/material/chips';
     MatCardModule,
     MatInputModule,
     MatGridListModule,
-    MatChipsModule
+    MatChipsModule,
+    MatSelectModule
   ]
 })
 export class MaterialModule { }

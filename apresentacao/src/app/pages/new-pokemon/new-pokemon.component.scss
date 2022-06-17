@@ -1,0 +1,13 @@
+mat-card.cadastro-pokemon {
+    margin: 1.5rem 1rem;
+
+    section {
+        form.cadastro-pokemon__formulario {
+            margin-top: 15px;
+            
+            mat-form-field {
+                margin-right: 15px;
+            }
+        }
+    }
+}

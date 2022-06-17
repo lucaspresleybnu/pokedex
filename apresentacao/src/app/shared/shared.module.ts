@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { MaterialModule } from './material/material.module';
 
@@ -16,13 +17,16 @@ import { PageFooterComponent } from './page-footer/page-footer.component';
   exports: [
     MaterialModule,
     PageHeaderComponent,
-    PageFooterComponent
+    PageFooterComponent,
+    ReactiveFormsModule
   ],
   imports: [
     CommonModule,
     RouterModule,
     MaterialModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule
   ]
 })
 export class SharedModule { }
