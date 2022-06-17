@@ -1,0 +1,35 @@
+<app-page-header></app-page-header>
+
+<section>
+  <mat-card class="lista-pokemons">
+    <a mat-raised-button href="/adicionar">
+      <mat-icon>add</mat-icon>
+      <span>Adicionar</span>
+    </a>
+    <form class="lista-pokemons__buscar">
+      <mat-form-field class="lista-pokemons__input-busca">
+        <mat-label>Buscar pokemon</mat-label>
+        <input type="text" matInput placeholder="Ex: Bulbasaur" #input (keyup)="getPokemonsBusca(input.value)"/>
+        <mat-icon matSuffix>search</mat-icon>
+      </mat-form-field>
+    </form>
+    <section class="lista-pokemons__exibicao">
+      <mat-card class="lista-pokemons__pokemon" *ngFor="let pokemon of listaPesquisaPokemons">
+        <img
+          mat-card-image
+          [src]="pokemon.imagem"
+          alt="Photo of a Shiba Inu"
+        />
+        <h3 class="lista-pokemons__titulo-pokemon">{{ pokemon.nome }}</h3>
+        <mat-card-content>
+            <mat-chip-list aria-label="Fish selection">
+                <mat-chip>Altura: {{ pokemon.altura }}m</mat-chip>
+                <mat-chip>Peso: {{ pokemon.peso }}kg</mat-chip>
+            </mat-chip-list>
+        </mat-card-content>
+      </mat-card>
+    </section>
+  </mat-card>
+</section>
+
+<app-page-footer></app-page-footer>

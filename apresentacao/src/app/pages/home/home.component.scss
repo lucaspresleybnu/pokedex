@@ -1,0 +1,46 @@
+:root {
+    --cardWidth: 240px;
+    --cardHeight: 280px;
+    --cardMargin: 16px;
+}
+
+mat-card.lista-pokemons {
+    margin: 1.5rem 1rem;
+
+    form.lista-pokemons__buscar {
+        display: block;
+        text-align: center;
+    }
+
+    section.lista-pokemons__exibicao {
+        margin-top: 15px;
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+
+        mat-card.lista-pokemons__pokemon {
+            //width: 16.6%;
+            width: 220px;
+            height: 300px;
+            margin: 16px;
+            box-sizing: border-box;
+            
+            .lista-pokemons__titulo-pokemon {
+                font-size: 1.5em;
+            }
+            img.mat-card-image {
+                width: calc(100%);
+                margin: 0;
+            }
+            mat-card-content {
+                mat-chip-list {
+                    mat-chip {
+                        min-height: 22px;
+                        font-size: 11px;
+                    }
+                }
+            }
+        }
+    }
+    
+}
