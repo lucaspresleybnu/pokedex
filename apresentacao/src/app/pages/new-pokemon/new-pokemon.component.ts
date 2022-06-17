@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, FormBuilder, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 
 import { PokedexService } from 'src/app/shared/services/pokedex.service';
 
@@ -21,7 +22,8 @@ export class NewPokemonComponent implements OnInit {
 
   constructor(
     private pokedexService: PokedexService,
-    private formBuilder: FormBuilder
+    private formBuilder: FormBuilder,
+    private router: Router
   ) { }
 
   inicializaForm() {
@@ -59,7 +61,15 @@ export class NewPokemonComponent implements OnInit {
 
   enviaForm() {
     if (this.cadastroForm.valid) {
-      console.log(this.cadastroForm.value);
+      this.pokedexService.postPokemons(this.cadastroForm.value).subscribe(
+        (retorno) => {
+          alert("Pokemon cadastrado com sucesso!");
+          this.router.navigate(['']);
+        },
+        (_) => {
+          alert("Não foi possível cadastrar, verifique a conexão com o servidor");
+        }
+      );
     }
   }
 
