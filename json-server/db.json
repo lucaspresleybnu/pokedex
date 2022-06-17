@@ -1,0 +1,176 @@
+{
+    "pokemons": [
+        {
+            "id": 1,
+            "nome": "Bulbasaur",
+            "descricao": "There is a plant seed on its back right from the day this Pokémon is born. The seed slowly grows larger.",
+            "altura": 0.7,
+            "peso": 6.9,
+            "categoria": 1,
+            "habilidades": [3],
+            "ataque": 3,
+            "defesa": 3,
+            "velocidade": 3,
+            "imagem": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/001.png"
+        },
+        {
+            "id": 2,
+            "nome": "Charmander",
+            "descricao": "It has a preference for hot things. When it rains, steam is said to spout from the tip of its tail.",
+            "altura": 0.6,
+            "peso": 8.5,
+            "categoria": 2,
+            "habilidades": [4],
+            "ataque": 4,
+            "defesa": 3,
+            "velocidade": 4,
+            "imagem": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/004.png"
+        },
+        {
+            "id": 3,
+            "nome": "Charizard",
+            "descricao": "It spits fire that is hot enough to melt boulders. It may cause forest fires by blowing flames.",
+            "altura": 1.7,
+            "peso": 90.5,
+            "categoria": 3,
+            "habilidades": [4],
+            "ataque": 5,
+            "defesa": 5,
+            "velocidade": 6,
+            "imagem": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/006.png"
+        },
+        {
+            "id": 4,
+            "nome": "Spearow",
+            "descricao": "Inept at flying high. However, it can fly around very fast to protect its territory.",
+            "altura": 0.3,
+            "peso": 2.0,
+            "categoria": 4,
+            "habilidades": [5],
+            "ataque": 4,
+            "defesa": 2,
+            "velocidade": 5,
+            "imagem": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/021.png"
+        },
+        {
+            "id": 5,
+            "nome": "Pikachu",
+            "descricao": "Pikachu that can generate powerful electricity have cheek sacs that are extra soft and super stretchy.",
+            "altura": 0.4,
+            "peso": 6.0,
+            "categoria": 5,
+            "habilidades": [6],
+            "ataque": 4,
+            "defesa": 3,
+            "velocidade": 6,
+            "imagem": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/025.png"
+        },
+        {
+            "id": 6,
+            "nome": "Ninetales",
+            "descricao": "It is said to live 1,000 years, and each of its tails is loaded with supernatural powers.",
+            "altura": 1.1,
+            "peso": 19.9,
+            "categoria": 6,
+            "habilidades": [7],
+            "ataque": 5,
+            "defesa": 5,
+            "velocidade": 6,
+            "imagem": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/038.png"
+        },
+        {
+            "id": 7,
+            "nome": "Meowth",
+            "descricao": "It loves to collect shiny things. If it’s in a good mood, it might even let its Trainer have a look at its hoard of treasures.",
+            "altura": 0.4,
+            "peso": 4.2,
+            "categoria": 7,
+            "habilidades": [1, 2],
+            "ataque": 5,
+            "defesa": 5,
+            "velocidade": 6,
+            "imagem": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/052.png"
+        },
+        {
+            "id": 8,
+            "nome": "Arcanine",
+            "descricao": "The sight of it running over 6,200 miles in a single day and night has captivated many people.",
+            "altura": 1.9,
+            "peso": 155.0,
+            "categoria": 7,
+            "habilidades": [7, 8],
+            "ataque": 7,
+            "defesa": 5,
+            "velocidade": 6,
+            "imagem": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/059.png"
+        }
+    ],
+    "categorias": [
+        {
+            "id": 1,
+            "nome": "Seed"
+        },
+        {
+            "id": 2,
+            "nome": "Lizard"
+        },
+        {
+            "id": 3,
+            "nome": "Flame"
+        },
+        {
+            "id": 4,
+            "nome": "Tiny Bird"
+        },
+        {
+            "id": 5,
+            "nome": "Mouse"
+        },
+        {
+            "id": 6,
+            "nome": "Fox"
+        },
+        {
+            "id": 7,
+            "nome": "Scratch Cat"
+        },
+        {
+            "id": 8,
+            "nome": "Legendary"
+        }
+    ],
+    "habilidades": [
+        {
+            "id": 1,
+            "nome": "Pickup"
+        },
+        {
+            "id": 2,
+            "nome": "Technician"
+        },
+        {
+            "id": 3,
+            "nome": "Overgrow"
+        },
+        {
+            "id": 4,
+            "nome": "Blaze"
+        },
+        {
+            "id": 5,
+            "nome": "Keen Eye" 
+        },
+        {
+            "id": 6,
+            "nome": "Static" 
+        },
+        {
+            "id": 7,
+            "nome": "Flash Fire" 
+        },
+        {
+            "id": 8,
+            "nome": "Intimidate" 
+        }
+    ]
+}
